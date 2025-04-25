@@ -1,0 +1,187 @@
+/* Butonlar */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: #3a80d2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: #f5f9ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn-accent:hover {
+  background-color: #e59613;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-text {
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0 16px;
+}
+
+.btn-text:hover {
+  background-color: rgba(74, 144, 226, 0.05);
+}
+
+.btn-icon {
+  width: 48px;
+  padding: 0;
+  border-radius: 24px;
+}
+
+/* Form Elemanları */
+.form-control {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid var(--color-gray);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-body);
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.1);
+  outline: none;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-anthracite);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Checkbox & Radio */
+.checkbox, .radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.checkbox input, .radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-custom {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: var(--spacing-sm);
+  border: 1px solid var(--color-gray);
+  border-radius: 4px;
+  background-color: var(--color-white);
+}
+
+.radio-custom {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: var(--spacing-sm);
+  border: 1px solid var(--color-gray);
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+
+.checkbox input:checked ~ .checkbox-custom:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 8px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--color-primary);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.radio input:checked ~ .radio-custom:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 8px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+/* Kartlar */
+.card {
+  padding: var(--spacing-lg);
+  border-radius: 16px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-elevated {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  margin-bottom: var(--spacing-md);
+}
+
+.card-title {
+  margin-bottom: var(--spacing-xs);
+}
+
+.card-body {
+  margin-bottom: var(--spacing-md);
+}
+
+.card-footer {
+  margin-top: var(--spacing-md);
+} 
