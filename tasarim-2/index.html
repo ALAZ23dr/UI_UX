@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELEGANTE | Modern Moda & Aksesuar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="announcement-bar">
+    <div class="container">
+      <p>🚚 Bugün sipariş verin, ücretsiz kargo ile yarın teslim edelim! Kod: ELEGANTE24</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-left">
+          <div class="logo">
+            <a href="index.html">ELEGANTE</a>
+          </div>
+        </div>
+        
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#" class="active">Ana Sayfa</a></li>
+            <li><a href="#">Kadın</a></li>
+            <li><a href="#">Erkek</a></li>
+            <li><a href="#">Aksesuar</a></li>
+            <li><a href="#">Koleksiyon</a></li>
+            <li><a href="#">İndirim</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-right">
+          <div class="header-actions">
+            <a href="#" class="header-action">
+              <i class="fas fa-search"></i>
+            </a>
+            <a href="#" class="header-action">
+              <i class="far fa-user"></i>
+            </a>
+            <a href="#" class="header-action">
+              <i class="far fa-heart"></i>
+              <span class="badge">2</span>
+            </a>
+            <a href="#" class="header-action cart-icon">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="badge">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-slider">
+        <div class="hero-slide active">
+          <div class="hero-content">
+            <h1>Yaz Koleksiyonu 2024</h1>
+            <p>Sıcak yaz günlerine özel şık ve rahat tasarımlar</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary">Şimdi Keşfet</a>
+              <a href="#" class="btn btn-secondary">Koleksiyonlar</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yaz Koleksiyonu">
+          </div>
+        </div>
+      </div>
+      <div class="hero-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Kategorilere Göz At</h2>
+          <p class="section-subtitle">Farklı tarzlar, benzersiz koleksiyonlar</p>
+        </div>
+        
+        <div class="categories-grid">
+          <a href="#" class="category-card">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/2043590/pexels-photo-2043590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Kadın">
+            </div>
+            <div class="category-content">
+              <h3>Kadın</h3>
+              <span class="category-link">Alışverişe Başla <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          
+          <a href="#" class="category-card">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Erkek">
+            </div>
+            <div class="category-content">
+              <h3>Erkek</h3>
+              <span class="category-link">Alışverişe Başla <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+          
+          <a href="#" class="category-card">
+            <div class="category-image">
+              <img src="https://images.pexels.com/photos/1453006/pexels-photo-1453006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Aksesuar">
+            </div>
+            <div class="category-content">
+              <h3>Aksesuar</h3>
+              <span class="category-link">Alışverişe Başla <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Öne Çıkan Ürünler</h2>
+          <p class="section-subtitle">Bu sezonun en çok tercih edilen parçaları</p>
+        </div>
+        
+        <div class="products-tabs">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="new-arrivals">Yeni Gelenler</button>
+            <button class="tab-btn" data-tab="best-sellers">Çok Satanlar</button>
+            <button class="tab-btn" data-tab="trending">Trend</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div class="tab-panel active" id="new-arrivals">
+              <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                  <div class="product-badge">Yeni</div>
+                  <div class="product-image">
+                    <img src="https://images.pexels.com/photos/2529157/pexels-photo-2529157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="İpek Bluz">
+                    <div class="product-actions">
+                      <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-name">İpek Bluz</h3>
+                    <div class="product-category">Kadın</div>
+                    <div class="product-price">₺1.299,90</div>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <span class="rating-count">(24)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                  <div class="product-badge sale">-25%</div>
+                  <div class="product-image">
+                    <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Keten Pantolon">
+                    <div class="product-actions">
+                      <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-name">Keten Pantolon</h3>
+                    <div class="product-category">Erkek</div>
+                    <div class="product-price">
+                      <span class="price-current">₺899,90</span>
+                      <span class="price-old">₺1.199,90</span>
+                    </div>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-count">(16)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                  <div class="product-image">
+                    <img src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Deri Sırt Çantası">
+                    <div class="product-actions">
+                      <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-name">Deri Sırt Çantası</h3>
+                    <div class="product-category">Aksesuar</div>
+                    <div class="product-price">₺2.499,90</div>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="rating-count">(32)</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                  <div class="product-badge">Yeni</div>
+                  <div class="product-image">
+                    <img src="https://images.pexels.com/photos/914668/pexels-photo-914668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="İnce Örgü Kazak">
+                    <div class="product-actions">
+                      <button class="product-action-btn"><i class="far fa-heart"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-shopping-bag"></i></button>
+                      <button class="product-action-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                  <div class="product-info">
+                    <h3 class="product-name">İnce Örgü Kazak</h3>
+                    <div class="product-category">Kadın</div>
+                    <div class="product-price">₺849,90</div>
+                    <div class="product-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-count">(18)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="products-cta">
+          <a href="#" class="btn btn-outline">Tüm Ürünleri Görüntüle</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+      <div class="container">
+        <div class="banner-row">
+          <div class="banner-col">
+            <div class="promo-banner">
+              <div class="banner-content">
+                <h3>Yaz İndirimi</h3>
+                <p>Seçili ürünlerde <strong>%50</strong>'ye varan indirimler</p>
+                <a href="#" class="btn btn-sm">Hemen Keşfet</a>
+              </div>
+              <div class="banner-image">
+                <img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yaz İndirimi">
+              </div>
+            </div>
+          </div>
+          
+          <div class="banner-col">
+            <div class="promo-banner">
+              <div class="banner-content">
+                <h3>Yeni Koleksiyon</h3>
+                <p>2024 Sonbahar koleksiyonu ile tarzınızı yenileyin</p>
+                <a href="#" class="btn btn-sm">İncele</a>
+              </div>
+              <div class="banner-image">
+                <img src="https://images.pexels.com/photos/2072583/pexels-photo-2072583.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Yeni Koleksiyon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-content">
+            <h2>Bültenimize Abone Olun</h2>
+            <p>En yeni ürünlerimiz, indirimler ve kampanyalardan haberdar olmak için abone olun.</p>
+          </div>
+          <form class="newsletter-form">
+            <div class="form-group">
+              <input type="email" placeholder="E-posta adresiniz" required>
+              <button type="submit" class="btn btn-dark">Abone Ol</button>
+            </div>
+            <label class="consent-checkbox">
+              <input type="checkbox" required>
+              <span class="checkmark"></span>
+              <span class="consent-text">Kişisel verilerin işlenmesine ilişkin <a href="#">aydınlatma metnini</a> okudum ve onaylıyorum.</span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Instagram'da Bizi Takip Edin</h2>
+          <p class="section-subtitle">@elegante_fashion</p>
+        </div>
+        
+        <div class="instagram-grid">
+          <a href="#" class="instagram-item">
+            <img src="https://images.pexels.com/photos/2703202/pexels-photo-2703202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Instagram Post">
+            <div class="instagram-overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Instagram Post">
+            <div class="instagram-overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="https://images.pexels.com/photos/2098168/pexels-photo-2098168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Instagram Post">
+            <div class="instagram-overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="https://images.pexels.com/photos/1375736/pexels-photo-1375736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Instagram Post">
+            <div class="instagram-overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="https://images.pexels.com/photos/974911/pexels-photo-974911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Instagram Post">
+            <div class="instagram-overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="#" class="instagram-item">
+            <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Instagram Post">
+            <div class="instagram-overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="footer-logo">ELEGANTE</div>
+          <p class="footer-desc">Elegante, modern ve şık moda anlayışı ile her sezon yeni trendleri sizlerle buluşturan premium moda markasıdır.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Alışveriş</h4>
+          <ul class="footer-links">
+            <li><a href="#">Kadın</a></li>
+            <li><a href="#">Erkek</a></li>
+            <li><a href="#">Çocuk</a></li>
+            <li><a href="#">Aksesuar</a></li>
+            <li><a href="#">Yeni Gelenler</a></li>
+            <li><a href="#">İndirimler</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Müşteri Hizmetleri</h4>
+          <ul class="footer-links">
+            <li><a href="#">Hesabım</a></li>
+            <li><a href="#">Siparişlerim</a></li>
+            <li><a href="#">İade ve Değişim</a></li>
+            <li><a href="#">Kargo Takip</a></li>
+            <li><a href="#">Yardım</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">Kurumsal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Hakkımızda</a></li>
+            <li><a href="#">Mağazalarımız</a></li>
+            <li><a href="#">Kariyer</a></li>
+            <li><a href="#">Sürdürülebilirlik</a></li>
+            <li><a href="#">Gizlilik Politikası</a></li>
+            <li><a href="#">Kullanım Koşulları</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-title">İletişim</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> Bağdat Caddesi No:123, Kadıköy/İstanbul</li>
+            <li><i class="fas fa-phone-alt"></i> +90 212 123 45 67</li>
+            <li><i class="fas fa-envelope"></i> info@elegante.com</li>
+          </ul>
+          <div class="payment-methods">
+            <img src="https://cdn-icons-png.flaticon.com/512/217/217445.png" alt="Visa">
+            <img src="https://cdn-icons-png.flaticon.com/512/217/217430.png" alt="Mastercard">
+            <img src="https://cdn-icons-png.flaticon.com/512/217/217431.png" alt="American Express">
+            <img src="https://cdn-icons-png.flaticon.com/512/217/217437.png" alt="PayPal">
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 ELEGANTE. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html> 

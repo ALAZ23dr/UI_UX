@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetScreen - Film ve Dizi İzleme Platformu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="cinema-app">
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1 class="logo"><i class="fas fa-play-circle"></i> NetScreen</h1>
+      </div>
+      <div class="sidebar-menu">
+        <div class="menu-category">Ana Menü</div>
+        <a href="#" class="menu-item active">
+          <i class="fas fa-home"></i> Ana Sayfa
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-compass"></i> Keşfet
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-fire"></i> Trendler
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-calendar"></i> Yeni Çıkanlar
+        </a>
+        
+        <div class="menu-category">Kütüphanem</div>
+        <a href="#" class="menu-item">
+          <i class="fas fa-clock"></i> İzleme Geçmişi
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-heart"></i> Favorilerim
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-bookmark"></i> İzleme Listem
+        </a>
+        
+        <div class="menu-category">Kategoriler</div>
+        <a href="#" class="menu-item">
+          <i class="fas fa-film"></i> Filmler
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-tv"></i> Diziler
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-mask"></i> Aksiyon
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-rocket"></i> Bilim Kurgu
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-ghost"></i> Korku
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-grin-squint-tears"></i> Komedi
+        </a>
+      </div>
+      <div class="sidebar-footer">
+        <a href="#" class="menu-item">
+          <i class="fas fa-cog"></i> Ayarlar
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-question-circle"></i> Yardım
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="content-header">
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Film, dizi veya oyuncu ara...">
+        </div>
+        <div class="header-actions">
+          <a href="#" class="notification-icon">
+            <i class="fas fa-bell"></i>
+            <span class="notification-badge">3</span>
+          </a>
+          <div class="user-profile">
+            <img src="https://i.pravatar.cc/40?img=12" alt="Profil">
+            <span class="username">Kullanıcı</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Banner -->
+      <section class="hero-banner" style="background-image: url('https://wallpapercave.com/wp/wp11826235.jpg')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-badge">YENİ SEZON</div>
+          <h1 class="hero-title">Stranger Things</h1>
+          <div class="hero-meta">
+            <span><i class="fas fa-star"></i> 8.7</span>
+            <span>2016-2023</span>
+            <span>Bilim Kurgu/Gerilim</span>
+            <span>4 Sezon</span>
+          </div>
+          <p class="hero-description">1980'lerde geçen kült dizi, Indiana'daki Hawkins kasabasında yaşayan genç bir grup arkadaşın gizemli olaylar ve paralel bir boyutla karşılaşmalarını konu alıyor.</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary"><i class="fas fa-play"></i> Oynat</button>
+            <button class="btn btn-secondary"><i class="fas fa-plus"></i> Listeme Ekle</button>
+            <button class="btn btn-outline"><i class="fas fa-info-circle"></i> Daha Fazla</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Content Sections -->
+      <section class="content-section">
+        <div class="section-header">
+          <h2>Popüler Filmler</h2>
+          <a href="#" class="view-all">Tümünü Gör <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="media-slider">
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.5</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">Dune: Part Two</h3>
+              <p class="media-meta">2024 • Bilim Kurgu</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.4</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">Joker</h3>
+              <p class="media-meta">2019 • Dram/Gerilim</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">7.8</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">The Batman</h3>
+              <p class="media-meta">2022 • Aksiyon/Gerilim</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.8</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">Inception</h3>
+              <p class="media-meta">2010 • Bilim Kurgu</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.9</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">Oppenheimer</h3>
+              <p class="media-meta">2023 • Dram/Biyografi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-header">
+          <h2>Yeni Diziler</h2>
+          <a href="#" class="view-all">Tümünü Gör <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="media-slider">
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZGUzYTI3M2EtZmM0Yy00NGUyLWI4ODEtN2Q3ZGJlYzhhZjU3XkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.7</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">The Last of Us</h3>
+              <p class="media-meta">2023 • Bilim Kurgu</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BM2ZmMjEyZmYtOGM4YS00YTNhLWE3ZDMtNzQxM2RhNjBlODIyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.2</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">Wednesday</h3>
+              <p class="media-meta">2022 • Komedi/Korku</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BMWI0OTJlYTItNzMwZi00YzRiLWJhMjItMWRlMDNhZjNiMzJkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.7</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">The Mandalorian</h3>
+              <p class="media-meta">2019 • Bilim Kurgu</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZmY2YzU4NDktODIxYi00YWIyLWIzYTctODBkYzYzZjc0ODdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.7</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">Dark</h3>
+              <p class="media-meta">2017 • Bilim Kurgu</p>
+            </div>
+          </div>
+          
+          <div class="media-card">
+            <div class="media-poster" style="background-image: url('https://m.media-amazon.com/images/M/MV5BZjBiOGIyY2YtOTA3OC00YzY1LThkYjktMGRkYTNhNTExY2I2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg')">
+              <div class="media-overlay">
+                <div class="media-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                  <button class="media-action-btn"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+              <div class="media-badge">8.5</div>
+            </div>
+            <div class="media-info">
+              <h3 class="media-title">House of the Dragon</h3>
+              <p class="media-meta">2022 • Fantastik</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="section-header">
+          <h2>İzlemeye Devam Et</h2>
+          <a href="#" class="view-all">Tümünü Gör <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <div class="continue-slider">
+          <div class="continue-card">
+            <div class="continue-poster" style="background-color: #000; background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+              <div class="continue-overlay">
+                <div class="continue-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="continue-info">
+              <h3 class="continue-title">Breaking Bad</h3>
+              <p class="continue-meta">S3:E8 • 35 dk kaldı</p>
+            </div>
+          </div>
+          
+          <div class="continue-card">
+            <div class="continue-poster" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/e/e8/Peaky_Blinders_titlecard.jpg')">
+              <div class="continue-overlay">
+                <div class="continue-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 45%"></div>
+              </div>
+            </div>
+            <div class="continue-info">
+              <h3 class="continue-title">Peaky Blinders</h3>
+              <p class="continue-meta">S4:E3 • 28 dk kaldı</p>
+            </div>
+          </div>
+          
+          <div class="continue-card">
+            <div class="continue-poster" style="background-color: #000; display: flex; justify-content: center; align-items: center; flex-direction: column; color: #D3B478;">
+              <div style="font-family: 'Poppins', serif; font-weight: 700; font-size: 24px; text-align: center;">THE<br>WITCHER</div>
+              <div style="font-size: 32px; margin-top: 10px;"><i class="fas fa-fire"></i></div>
+              <div class="continue-overlay">
+                <div class="continue-actions">
+                  <button class="media-action-btn"><i class="fas fa-play"></i></button>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" style="width: 20%"></div>
+              </div>
+            </div>
+            <div class="continue-info">
+              <h3 class="continue-title">The Witcher</h3>
+              <p class="continue-meta">S2:E1 • 42 dk kaldı</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="content-footer">
+        <div class="footer-links">
+          <a href="#">Hakkımızda</a>
+          <a href="#">SSS</a>
+          <a href="#">Gizlilik Politikası</a>
+          <a href="#">Kullanım Şartları</a>
+          <a href="#">İletişim</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2024 NetScreen. Tüm hakları saklıdır.
+        </div>
+      </footer>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <a href="#" class="mobile-nav-item active">
+        <i class="fas fa-home"></i>
+        <span>Ana Sayfa</span>
+      </a>
+      <a href="#" class="mobile-nav-item">
+        <i class="fas fa-compass"></i>
+        <span>Keşfet</span>
+      </a>
+      <a href="#" class="mobile-nav-item">
+        <i class="fas fa-bookmark"></i>
+        <span>Listem</span>
+      </a>
+      <a href="#" class="mobile-nav-item">
+        <i class="fas fa-download"></i>
+        <span>İndirilenler</span>
+      </a>
+      <a href="#" class="mobile-nav-item">
+        <i class="fas fa-user"></i>
+        <span>Profil</span>
+      </a>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html> 

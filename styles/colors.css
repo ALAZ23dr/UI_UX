@@ -1,0 +1,19 @@
+:root {
+  /* Ana Renkler */
+  --color-primary: #4A90E2; /* Koyu Mavi */
+  --color-secondary: #50E3C2; /* Turkuaz */
+  --color-accent: #F5A623; /* Turuncu */
+  
+  /* Nötral Renkler */
+  --color-white: #FFFFFF;
+  --color-light-gray: #F5F5F5;
+  --color-gray: #E0E0E0;
+  --color-dark-gray: #9B9B9B;
+  --color-anthracite: #4A4A4A;
+  
+  /* Durum Renkleri */
+  --color-success: #27AE60;
+  --color-error: #EB5757;
+  --color-info: #2D9CDB;
+  --color-warning: #F2C94C;
+} 

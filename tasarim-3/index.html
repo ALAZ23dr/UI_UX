@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS - Modern Oyun Platformu</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+  
+  <div class="nexus-container">
+    <!-- Sol Kenar Çubuğu -->
+    <aside class="nexus-sidebar">
+      <div class="sidebar-header">
+        <a href="#" class="logo">
+          <i class="fas fa-gamepad"></i>
+          <span>NEXUS</span>
+        </a>
+      </div>
+      
+      <!-- Kullanıcı Profili -->
+      <div class="user-profile">
+        <div class="avatar">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Kullanıcı Avatarı">
+          <span class="status online"></span>
+        </div>
+        <div class="user-info">
+          <h3>MechWarrior</h3>
+          <div class="user-level">
+            <span class="level">Lvl 42</span>
+            <span>Pro Oyuncu</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Ana Navigasyon -->
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <h4 class="nav-title">ANA MENÜ</h4>
+          <ul>
+            <li class="nav-item active">
+              <a href="#">
+                <i class="fas fa-home"></i>
+                <span>Keşfet</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-fire"></i>
+                <span>Popüler</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-calendar"></i>
+                <span>Yaklaşan</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Mağaza</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="nav-section">
+          <h4 class="nav-title">KÜTÜPHANENİZ</h4>
+          <ul>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-gamepad"></i>
+                <span>Oyunlarım</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-download"></i>
+                <span>İndirilenler</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-heart"></i>
+                <span>İstek Listesi</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-trophy"></i>
+                <span>Başarılar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="nav-section">
+          <h4 class="nav-title">KATEGORİLER</h4>
+          <ul>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-fist-raised"></i>
+                <span>Aksiyon</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-skull"></i>
+                <span>FPS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-car"></i>
+                <span>Yarış</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <i class="fas fa-dragon"></i>
+                <span>RPG</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <a href="#" class="settings-btn">
+          <i class="fas fa-cog"></i>
+          <span>Ayarlar</span>
+        </a>
+        <a href="#" class="logout-btn">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Çıkış</span>
+        </a>
+      </div>
+    </aside>
+    
+    <!-- Ana İçerik -->
+    <main class="nexus-main">
+      <!-- Header -->
+      <header class="nexus-header">
+        <div class="header-left">
+          <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Oyun, kategori veya oyuncu ara...">
+          </div>
+        </div>
+        
+        <div class="header-actions">
+          <button class="notification-btn">
+            <i class="fas fa-bell"></i>
+            <span class="badge">3</span>
+          </button>
+          <button class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge">2</span>
+          </button>
+          <button class="theme-toggle-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </header>
+      
+      <!-- Hero Bölümü -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-details">
+            <div class="hero-tags">
+              <span class="tag featured">ÖNE ÇIKAN</span>
+              <span class="tag new">YENİ ÇIKTI</span>
+            </div>
+            <h1 class="hero-title">Assassin's Creed Valhalla</h1>
+            <p class="hero-description">Viking efsanesi olarak kendi destanını yarat. Vahşi Vikingler diyarında topraklarını fethedin ve taktiksel baskın savaşları ile İngiltere'nin kaderini belirleyin.</p>
+            
+            <div class="hero-stats">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.8</span>
+              </div>
+              
+              <div class="genre-tags">
+                <span class="genre-tag">Aksiyon</span>
+                <span class="genre-tag">RPG</span>
+                <span class="genre-tag">Açık Dünya</span>
+              </div>
+            </div>
+            
+            <div class="hero-actions">
+              <button class="primary-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Satın Al - 299₺</span>
+              </button>
+              <button class="secondary-btn">
+                <i class="fas fa-plus"></i>
+                <span>İstek Listesine Ekle</span>
+              </button>
+              <button class="icon-btn">
+                <i class="fas fa-share-alt"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="hero-image">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/2208920/header.jpg" alt="Assassin's Creed Valhalla">
+          </div>
+        </div>
+      </section>
+      
+      <!-- Kategoriler Bölümü -->
+      <section class="categories-section">
+        <div class="section-header">
+          <h2>Kategorilere Göz At</h2>
+          <a href="#" class="view-all">Tümünü Görüntüle <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="categories-grid">
+          <div class="category-card" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1174180/capsule_616x353.jpg')">
+            <div class="category-overlay"></div>
+            <div class="category-info">
+              <i class="fas fa-fist-raised"></i>
+              <h3>Aksiyon</h3>
+              <span>154 Oyun</span>
+            </div>
+          </div>
+          
+          <div class="category-card" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1904570/capsule_616x353.jpg')">
+            <div class="category-overlay"></div>
+            <div class="category-info">
+              <i class="fas fa-car-side"></i>
+              <h3>Yarış</h3>
+              <span>86 Oyun</span>
+            </div>
+          </div>
+          
+          <div class="category-card" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1919590/capsule_616x353.jpg')">
+            <div class="category-overlay"></div>
+            <div class="category-info">
+              <i class="fas fa-running"></i>
+              <h3>Spor</h3>
+              <span>92 Oyun</span>
+            </div>
+          </div>
+          
+          <div class="category-card" style="background-image: url('https://cdn.akamai.steamstatic.com/steam/apps/1245620/capsule_616x353.jpg')">
+            <div class="category-overlay"></div>
+            <div class="category-info">
+              <i class="fas fa-dragon"></i>
+              <h3>RPG</h3>
+              <span>217 Oyun</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Popüler Oyunlar Bölümü -->
+      <section class="games-section">
+        <div class="section-header">
+          <h2>Popüler Oyunlar</h2>
+          <a href="#" class="view-all">Tümünü Görüntüle <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="games-grid">
+          <div class="game-card">
+            <div class="game-card-image">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077">
+              <div class="game-card-overlay">
+                <div class="game-card-actions">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                  <button class="info-btn"><i class="fas fa-info"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="game-card-info">
+              <h3>Cyberpunk 2077</h3>
+              <div class="game-card-meta">
+                <span class="publisher">CD Projekt Red</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-card-image">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War">
+              <div class="game-card-overlay">
+                <div class="game-card-actions">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                  <button class="info-btn"><i class="fas fa-info"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="game-card-info">
+              <h3>God of War</h3>
+              <div class="game-card-meta">
+                <span class="publisher">Sony Interactive Entertainment</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.9</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-card-image">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3">
+              <div class="game-card-overlay">
+                <div class="game-card-actions">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                  <button class="info-btn"><i class="fas fa-info"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="game-card-info">
+              <h3>The Witcher 3: Wild Hunt</h3>
+              <div class="game-card-meta">
+                <span class="publisher">CD Projekt Red</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-card-image">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring">
+              <div class="game-card-overlay">
+                <div class="game-card-actions">
+                  <button class="play-btn"><i class="fas fa-play"></i></button>
+                  <button class="info-btn"><i class="fas fa-info"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="game-card-info">
+              <h3>Elden Ring</h3>
+              <div class="game-card-meta">
+                <span class="publisher">FromSoftware</span>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <span>4.7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Yeni Çıkanlar Bölümü -->
+      <section class="new-releases-section">
+        <div class="section-header">
+          <h2>Yeni Çıkanlar</h2>
+          <a href="#" class="view-all">Tümünü Görüntüle <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="releases-grid">
+          <div class="release-card">
+            <div class="release-card-image">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg" alt="Hogwarts Legacy">
+              <span class="release-date">Yeni Çıktı</span>
+            </div>
+            <div class="release-card-info">
+              <h3>Hogwarts Legacy</h3>
+              <p class="release-card-description">Harry Potter evreninde geçen 1800'lerin büyücülük dünyasında kendi hikayeni yarat. Benzersiz bir büyü öğrencisi yolculuğuna çık.</p>
+              <div class="release-card-price">
+                <span class="price">499₺</span>
+                <button class="buy-btn">Satın Al</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="release-card">
+            <div class="release-card-image">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/1774580/header.jpg" alt="Star Wars Jedi: Survivor">
+              <span class="release-date">Yeni Çıktı</span>
+            </div>
+            <div class="release-card-info">
+              <h3>Star Wars Jedi: Survivor</h3>
+              <p class="release-card-description">Cal Kestis'in hikayesine devam ederek karanlık zamanlar boyunca yolunu bul. Yeni Jedi yetenekleri, heyecan verici destinasyonlar ve maceralar seni bekliyor.</p>
+              <div class="release-card-price">
+                <span class="price">599₺</span>
+                <button class="buy-btn">Satın Al</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="release-card">
+            <div class="release-card-image">
+              <img src="https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg" alt="Resident Evil 4 Remake">
+              <span class="release-date">Yeni Çıktı</span>
+            </div>
+            <div class="release-card-info">
+              <h3>Resident Evil 4 Remake</h3>
+              <p class="release-card-description">Survival horror klasiği yeniden doğuyor. Leon S. Kennedy'nin kurtarma görevini modern grafikler ve oynanış ile yeniden yaşa.</p>
+              <div class="release-card-price">
+                <span class="price">549₺</span>
+                <button class="buy-btn">Satın Al</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Arkadaşlar Kenar Çubuğu -->
+    <aside class="nexus-friends-sidebar">
+      <div class="friends-header">
+        <h3>Arkadaşlar</h3>
+        <div class="friends-actions">
+          <button class="friends-action-btn">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="friends-action-btn">
+            <i class="fas fa-filter"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="friends-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Arkadaş ara...">
+      </div>
+      
+      <div class="friends-list">
+        <div class="friends-category">
+          <h4>ÇEVRİMİÇİ - 5</h4>
+          <div class="friend-item online">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Arkadaş Avatarı">
+            <div class="friend-info">
+              <h5>SteelSniper</h5>
+              <p>Call of Duty: Warzone oynuyor</p>
+            </div>
+            <div class="friend-actions">
+              <button class="friend-action-btn">
+                <i class="fas fa-comment"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="friend-item online">
+            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Arkadaş Avatarı">
+            <div class="friend-info">
+              <h5>DarkKnight</h5>
+              <p>League of Legends oynuyor</p>
+            </div>
+            <div class="friend-actions">
+              <button class="friend-action-btn">
+                <i class="fas fa-comment"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="friend-item online">
+            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Arkadaş Avatarı">
+            <div class="friend-info">
+              <h5>GhostRunner</h5>
+              <p>Fortnite oynuyor</p>
+            </div>
+            <div class="friend-actions">
+              <button class="friend-action-btn">
+                <i class="fas fa-comment"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html> 
